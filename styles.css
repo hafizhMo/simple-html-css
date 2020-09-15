@@ -183,6 +183,13 @@ body {
     background-size: cover;
     background-position: 0 -25px;
     border-top: 5px solid skyblue;
+    border-bottom: 3px solid white;
+}
+
+.subhero {
+    height: 170px;
+    background-image: url(img/debut.gif);
+    background-size: cover;
     border-bottom: 5px solid skyblue;
 }
 
