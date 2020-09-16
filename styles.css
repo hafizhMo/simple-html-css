@@ -145,7 +145,7 @@ body {
 }
 
 .container {
-    width: 800px;
+    width: 960px;
     margin: auto;
     background-color: white;
 }
@@ -178,49 +178,82 @@ body {
 }
 
 .hero {
-    height: 350px;
+    height: 400px;
     background-image: url(img/member.jpg);
     background-size: cover;
-    background-position: 0 -25px;
+    background-position: 0 -35px;
     border-top: 5px solid skyblue;
-    border-bottom: 3px solid white;
+
 }
 
 .subhero {
-    height: 170px;
+    height: 65px;
     background-image: url(img/debut.gif);
-    background-size: cover;
+    background-size: contain;
     border-bottom: 5px solid skyblue;
 }
 
-.content {
+.main {
+    width: 600px;
     padding: 20px;
+    float: left;
+    box-sizing: border-box;
 }
 
-.content h2 {
+.main h2 {
     font-size: medium;
     font-weight: bold;
 }
 
-.content .writer {
+.main .writer {
     font-size: x-small;
     margin-top: 5px;
 }
 
-.content .writer a {
+.main .writer a {
     color: skyblue;
     padding: 5px 0px;
 }
 
-.content .writer a:hover {
+.main .writer a:hover {
     background-color: skyblue;
     color: white;
 }
 
-.content p {
+.main p {
     padding-bottom: 20px;
     font-size: small;
     line-height: 18px;
+}
+
+.sidebar {
+    width: 300px;
+    padding: 20px;
+    box-sizing: border-box;
+    float: right;
+}
+
+.sidebar h3 {
+    font-size: small;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.sidebar img {
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+    float: left;
+}
+
+.sidebar strong {
+    font-size: x-small;
+    font-weight: bolder;
+}
+
+.sidebar p {
+    font-size: xx-small;
+    line-height: 14px;
 }
 
 .footer {
@@ -232,4 +265,34 @@ body {
     color: whitesmoke;
     text-align: center;
     font-size: smaller;
+}
+
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+  * For IE 6/7 only
+  * Include this rule to trigger hasLayout and contain floats.
+  */
+.cf {
+    *zoom: 1;
 }
